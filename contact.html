@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith | Apply</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding-bottom: 50px; }
+        nav { background: #1a2a6c; padding: 1rem; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { padding: 20px; max-width: 500px; margin: auto; }
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        .btn-submit { background: #28a745; color: white; padding: 15px; border: none; width: 100%; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; }
+        .map-section { background: #eee; height: 150px; margin-top: 30px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 2px dashed #bbb; text-align: center; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Branches</a>
+    <a href="contact.html">Apply Now</a>
+</nav>
+
+<div class="container">
+    <h2>Apply for Admission</h2>
+    <form onsubmit="event.preventDefault(); alert('Form Submitted Successfully! We will contact you at the provided email.');">
+        <label>Candidate Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Email ID</label>
+        <input type="email" placeholder="email@example.com" required>
+
+        <label>Preferred Branch</label>
+        <select required>
+            <option value="">-- Choose Branch --</option>
+            <option>CSE (Artificial Intelligence)</option>
+            <option>Electronics & Communication</option>
+            <option>Mechanical Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Electrical Engineering</option>
+        </select>
+
+        <button type="submit" class="btn-submit">Submit Application</button>
+    </form>
+
+    <div class="map-section">
+        <p>📍 <strong>Campus Location:</strong><br>123 Innovation Drive, Tech City, 560001</p>
+    </div>
+</div>
+
+</body>
+</html>
