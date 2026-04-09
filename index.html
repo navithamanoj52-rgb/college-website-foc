@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith Institute | Home</title>
+    <title>Novus Institute | Home</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
-        nav { background: #1a2a6c; padding: 1rem; text-align: center; position: sticky; top: 0; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; background: #fdfdfd; }
+        nav { background: #0f2027; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .hero { background: linear-gradient(45deg, #1a2a6c, #b21f1f); color: white; padding: 60px 20px; text-align: center; }
-        .logo-icon { font-size: 50px; margin-bottom: 10px; }
-        .container { padding: 40px 20px; text-align: center; }
-        .btn { background: #fdbb2d; color: #1a2a6c; padding: 12px 24px; border: none; border-radius: 25px; cursor: pointer; font-weight: bold; font-size: 16px; }
+        .hero { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { margin-top: 0; margin-bottom: 5px; font-size: 32px; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        
+        /* New Campus Image Style */
+        .campus-img { 
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 12px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+        .news-item { border-bottom: 1px dashed #ddd; padding: 15px 0; display: flex; align-items: center; }
+        .news-date { background: #2c5364; color: white; padding: 5px 10px; border-radius: 5px; font-size: 11px; margin-right: 15px; min-width: 50px; text-align: center;}
+        .news-text { font-weight: 500; font-size: 14px; color: #444; }
+        
+        .btn { background: #00d2ff; color: white; padding: 12px 24px; border: none; border-radius: 25px; cursor: pointer; font-weight: bold; margin-top: 20px; font-size: 16px; transition: background 0.2s; }
+        .btn:active { background: #00acc1; }
+        footer { background: #0f2027; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; font-size: 13px; }
     </style>
 </head>
 <body>
@@ -23,16 +39,48 @@
 </nav>
 
 <div class="hero">
-    <div class="logo-icon">🏛️</div>
-    <h1>Zenith Institute of Technology</h1>
-    <p>A Premier Engineering Institution for Future Leaders</p>
-    <button class="btn" onclick="alert('Admissions for 2026-27 are now open!')">Admission Updates</button>
+    <h1>Novus Institute of Technology</h1>
+    <p>Innovating the Future through AI & Engineering Excellence</p>
+    <button class="btn" onclick="alert('Join our Campus Tour on April 20th!')">Visit Campus</button>
 </div>
 
 <div class="container">
-    <h2>Welcome to the Future</h2>
-    <p>At Zenith, we focus on hands-on learning and innovation. Explore our various engineering departments and state-of-the-art labs.</p>
+    <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop" 
+     alt="Novus Institute Campus" class="campus-img">
+         
+    <div class="news-section">
+        <h2 style="color: #0f2027; margin-bottom: 20px; border-bottom: 2px solid #00d2ff; display: inline-block;">Latest News & Events</h2>
+        
+        <div class="news-item">
+            <div class="news-date">APR 12</div>
+            <div class="news-text">Novus AI Research Lab wins National Innovation Award.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">APR 05</div>
+            <div class="news-text">Registration open for 'Hack-Novus 2026' Coding Hackathon.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">MAR 28</div>
+            <div class="news-text">Guest Lecture: The Impact of Generative AI in Modern Industry.</div>
+        </div>
+        
+        <p style="text-align: right; font-size: 13px; color: #00d2ff; cursor: pointer; margin-top: 15px;"
+           onclick="alert('The full News Archive is being updated for the 2026 Academic Year!')">
+           View all announcements →
+        </p>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center;">
+        <h3 style="color: #2c5364;">Welcome to a New Era of Learning</h3>
+        <p>At Novus, we combine rigorous academic standards with hands-on AI integration to prepare our students for the challenges of tomorrow. Our primary focus is equipping future engineers with practical skills in deep learning, neural networks, and automation.</p>
+    </div>
 </div>
+
+<footer>
+    <p>&copy; 2026 Novus Institute of Technology | Excellence in AI</p>
+</footer>
 
 </body>
 </html>
