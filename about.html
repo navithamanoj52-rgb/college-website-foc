@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith | Branches</title>
+    <title>Novus | Branches</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; }
-        nav { background: #1a2a6c; padding: 1rem; text-align: center; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f2f5; padding-bottom: 50px; line-height: 1.6; }
+        nav { background: #0f2027; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .main { padding: 20px; }
-        .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-left: 6px solid #b21f1f; }
-        h3 { color: #1a2a6c; margin-top: 0; }
-        .tag { background: #e0e0e0; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+        .header-area { text-align: center; color: #0f2027; padding: 30px 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .card { background: white; border-radius: 12px; padding: 25px; margin: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 6px solid #00d2ff; transition: transform 0.2s; }
+        .card:hover { transform: scale(1.02); }
+        h3 { color: #2c5364; margin-top: 0; margin-bottom: 10px; }
+        p { color: #555; margin: 0; font-size: 15px; }
+        .tag { background: #e0f7fa; color: #00838f; padding: 4px 10px; border-radius: 15px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -22,39 +25,46 @@
     <a href="contact.html">Apply Now</a>
 </nav>
 
-<div class="main">
-    <h2 style="text-align: center;">Our Academic Programs</h2>
+<div class="header-area">
+    <h2>Academic Disciplines</h2>
+    <p>Discover our world-class engineering programs at Novus.</p>
+</div>
 
+<div class="container">
     <div class="card">
-        <h3>Computer Science & Engineering (AI)</h3>
-        <p>Master the world of Artificial Intelligence, Data Science, and Machine Learning.</p>
-        <span class="tag">4 Year Program</span>
+        <span class="tag">Primary Department</span>
+        <h3>CSE (Artificial Intelligence)</h3>
+        <p>Master the world of Neural Networks, Machine Learning, and Data Science. Prepare to lead the next industrial revolution.</p>
     </div>
 
     <div class="card">
+        <span class="tag">Electronics</span>
         <h3>Electronics & Communication</h3>
-        <p>Specializing in Robotics, VLSI Design, and Advanced Communication Systems.</p>
-        <span class="tag">4 Year Program</span>
+        <p>Explore the design of smart sensors, VLSI systems, and high-speed communication networks that power modern technology.</p>
     </div>
 
     <div class="card">
-        <h3>Mechanical Engineering</h3>
-        <p>Exploring Automobile Engineering, Mechatronics, and Industrial Design.</p>
-        <span class="tag">4 Year Program</span>
+        <span class="tag">Mechanical</span>
+        <h3>Mechanical & Automation</h3>
+        <p>Integrating classical mechanics with robotics and AI-driven manufacturing for future-ready industrial solutions.</p>
     </div>
 
     <div class="card">
+        <span class="tag">Electrical</span>
+        <h3>Electrical & Electronics</h3>
+        <p>Focused on renewable energy, smart grids, and the power systems that drive a sustainable future.</p>
+    </div>
+
+    <div class="card">
+        <span class="tag">Infrastructure</span>
         <h3>Civil Engineering</h3>
-        <p>Focusing on Smart City Planning, Structural Analysis, and Green Construction.</p>
-        <span class="tag">4 Year Program</span>
-    </div>
-
-    <div class="card">
-        <h3>Electrical Engineering</h3>
-        <p>Innovation in Renewable Energy, Smart Grids, and Power Electronics.</p>
-        <span class="tag">4 Year Program</span>
+        <p>Designing and building smart cities with a focus on sustainable materials and earthquake-resistant structures.</p>
     </div>
 </div>
+
+<footer style="text-align: center; color: #888; font-size: 12px; margin-top: 20px;">
+    &copy; 2026 Novus Institute of Technology
+</footer>
 
 </body>
 </html>
